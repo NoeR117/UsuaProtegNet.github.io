@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(160, 188, 197);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.nav>li {
+    float: left;
+}
+
+.nav {
+    background-color: #2868E6;
+    list-style: none;
+    padding: 10px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li a:hover {
+    background-color: #1f4faf;
+    text-decoration: underline;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 10px;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: 150%;
+    top: 10px;
+}
+
+.MENU {
+    background-color: yellow;
+    text-align: center;
+}
+
+.contenedor {
+    padding: 10px 80px;
+}
+
+.drogas {
+    padding: 60px 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.foo {
+    text-align: center;
+    font-size: 20px;
+    background-color: #2868E6;
+}
+
+.imagen {
+    padding: 0px 100px;
+    width: 1100px;
+    height: 130px;
+}
+
+.imagens {
+    visibility: hidden;
+    display: none;
+}
+
+@media (max-width: 700px) { /* Ajusta el tamaño según tus necesidades */
+    .imagen {
+        visibility: hidden;
+        display: none;
+    }
+
+    .imagens {
+        visibility: visible;
+        display: inline-block; /* O display: inline-block; si prefieres */
+    }
+}
+
+.con {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.head {
+    visibility: hidden;
+    display: none;
+}
+
+.video {
+    text-align: center;
+}
+
+@media (max-width: 1500px) {
+    .nav li a {
+        text-align: center;
+        background-color: #2868E6;
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        margin: 0px 9px;
+    }
+
+    .nav li ul {
+        min-width: 100px;
+    }
+
+    .navss {
+        padding: 10px 700px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .imagen {
+        padding: 25px 50px;
+        width: 900px;
+        height: 110px;
+    }
+
+    .contenedor {
+        padding: 1px 50px;
+    }
+
+    .drogas {
+        padding: 40px 1px;
+        font-size: 18px;
+    }
+
+    .navss {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .imagen {
+        padding: 20px 45px;
+        width: 900px;
+        height: 100px;
+    }
+
+    .contenedor {
+        padding: 1px 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .head {
+        visibility: visible;
+        display: flex;
+    }
+
+    .imagen {
+        padding: 5px 40px;
+        width: 800px;
+        height: 100px;
+    }
+
+    .nav {
+        visibility: hidden;
+        display: none;
+    }
+
+    .contenedor {
+        padding: 1px 50px;
+    }
+
+    .drogas {
+        padding: 10px 1px;
+        font-size: 18px;
+    }
+
+    .navss {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .imagen {
+        padding: 15px 35px;
+        width: 800px;
+        height: 100px;
+    }
+
+    .contenedor {
+        padding: 1px 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .imagen {
+        padding: 35px 30px;
+        width: 600px;
+        height: 80px;
+    }
+
+    .contenedor {
+        padding: 1px 35px;
+    }
+}
+
+@media (max-width: 700px) {
+    .imagen {
+        padding: 35px 30px;
+        width: 520px;
+        height: 80px;
+    }
+
+    .contenedor {
+        padding: 1px 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .imagen {
+        padding: 1px 40px;
+        width: 400px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .imagens {
+        visibility: visible;
+        display: flex;
+        padding: 5px 15px;
+        width: 370px;
+        height: 70px;
+    }
+
+    .contenedor {
+        padding: 1px 10px;
+    }
+
+    .drogas {
+        padding: 10px 1px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 400px) {
+    .imagen {
+        display: none;
+        visibility: hidden;
+    }
+
+    .imagens {
+        visibility: visible;
+        display: flex;
+        padding: 35px 22px;
+        width: 275px;
+        height: 60px;
+    }
+
+    .contenedor {
+        padding: 1px 10px;
+    }
+
+    .drogas {
+        padding: 3px 15px;
+    }
+}
+
+@media (max-width: 300px) {
+    .imagen {
+        padding: 5px 15px;
+        width: 150px;
+        height: 40px;
+    }
+
+    .imagens {
+        visibility: hidden;
+        display: none;
+    }
+
+    .contenedor {
+        padding: 1px 10px;
+    }
+
+    .drogas {
+        padding: 40px 15px;
+    }
+}
